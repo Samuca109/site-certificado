@@ -6,47 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificados</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
-        <div id="menu">
-            <img src="img/img1.jpg" alt="imagem-logo" id="img1">
-            <a href="#">Incio</a>
-            <a href="#">Meus pedidos</a>
-            <a href="#">Contato</a>
-            <a href="#">Certtidoes</a>
-            <a href="#">Login</a>
-        </div>
+        <img id="img1" src="img/img1.jpg" alt="imagem-logo" width="200px" height="130px" >
+        <span id="hamburguer" class="material-symbols-outlined" onclick="menu()">
+            menu
+        </span>
+        <menu id="menu">
+           <li><a href="#">Incio</a>
+           <li><a href="#">Meus pedidos</a>
+           <li><a href="#">Contato</a>
+           <li><a href="#">Certtidoes</a>
+           <li><a href="#">Login</a>
+        </menu>
     </header>
     <main>
         <section id="sec1">
             <h3>Peça seu documento de onde estiver </h3>
-             <p>Solicite certidões em cartórios de todo o Brasil e receba em casa. Simples assim.</p>
+             <p>Solicite certidões em cartórios de todo o Brasil e receba em casa, simples assim é o documento emitido pela Receita Federal para negativa de tributos federais e Previdência Social. necessário o CNPJ, em caso de pendência, não é possível a emissão, até a regularização e pagamento dos débitos.</p>
             <button>Pedir Certidao</button>
         </section>
 
        <section id="sec2">
-           <h4 class="h4">Certtidoes Disponiveis e seus conceitos</h4>
+           <h3 class="h4">Certtidoes Disponiveis e seus conceitos</h3>
            <ul>
-                <a href="">Certidao de imoveis</a> <br>
-                <a href="">Certidao de Testamento</a>
+           <li><a href="">Certidao de imoveis</a> 
+           <li><a href="">Certidao de Testamento</a>
            </ul>
        </section>
     </main>
 
     <footer>
-        <ul>
+        <ul id="geral">
             <p>Links Uteis</p> 
-           <li><a href="#">Nossa equipe</a> 
+            <li><a href="#">Nossa equipe</a>
             <li><a href="#">Tire Duvidas</a> 
-           <li><a href="#">Preços e prazos</a> 
-
-        <div id="lado2">
-           <p>Contatos</p>
-           <a href="#">Numero watzap</a> <br>
-           <a href="#">Instagram empresa</a><br>
-           <a href="#">gmail empresa</a><br>
-        </div>
+            <li><a href="#">Preços e prazos</a>
+        
+            <p >Contatos</p>
+            <li><a href="#">Numero watzap</a> 
+            <li><a href="#">Instagram empresa</a>
+            <li><a href="#">gmail empresa</a>
     </ul>
     </footer>
     

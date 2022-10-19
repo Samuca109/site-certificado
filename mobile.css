@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/*Sempre é bom lembarar de dar um display block*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    
+}
+/*Menu*/
+menu {
+    display: none;
+}
+
+menu li {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+menu li:hover{
+    background-color: rgb(143, 142, 142);
+}
+
+menu a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*Hamburguer*/
+#hamburguer{
+    text-align: center;
+    display: block;
+    cursor: pointer;
+}
+
+/*img*/
+#img1{
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+/*Main*/
+div > a {
+    color: black;
+    text-decoration: none;
+    margin: 1%;
+}
+ /*a:hover{
+    transition: 0.3s;
+    font-weight: bolder;
+    background-color: aqua;
+}*/
+
+/*Conteudo Main*/
+
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+#sec1 h3{
+    text-align: center;
+}
+ 
+section > ul {
+    columns: 2;
+}
+
+section > ul > li > a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    margin: 10px;
+}
+section > ul > a:hover{
+    background-color: darkgray;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 2s;
+    font-weight: bolder;
+}
+
+#sec1{
+    margin: 10%;
+    padding: 10px;
+    line-height: 30px;
+}
+
+#sec2{
+    width: 100vw;
+    text-align: center;
+}
+
+/*FOOTER*/
+footer{
+    background-color: coral;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+}   
+
+ul{
+    padding: 10px;
+    line-height: 30px;
+    columns: 2;
+    list-style-type: none;
+}
+
+footer p {
+    font-weight: bolder;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a:hover{
+    background-color: darkgray;
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    transition: 1.3s;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+}
+
+
