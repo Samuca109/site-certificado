@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Para desktop*/
+
+@media screen and (min-width:700px) and (max-width:950px) {
+    body{
+        width: 100vw;
+    }
+  
+  #hamburguer, menu{
+    width: 50%;
+    text-align: center;
+    display: block;
+  }
+
+  img{
+   width: 10px;
+  position: relative;
+  left: 70%;
+  top: 50%;
+  }
+ 
+
+
+}   
