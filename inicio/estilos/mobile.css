@@ -1,17 +1,29 @@
 @charset "UTF-8";
 
 /*Sempre é bom lembarar de dar um display block*/
+/*Parar de usar a configuração de body de vh e vw */
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
 
-body{
+
+/* IMG */
+img{
+    background-image: url(img/img1_400px.jpg);
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
     width: 100vw;
-    height: 100vh;
-    width: 100vw;
+}
+
+/*Hamburguer*/
+#hamburguer{
+    text-align: center;
+    display: block;
+    cursor: pointer;
 }
 
 /*Menu*/
@@ -33,41 +45,16 @@ menu li:hover{
 
 menu a {
     text-decoration: none;
-    font-weight: bolder;
-}
-
-/*Hamburguer*/
-#hamburguer{
-    text-align: center;
-    display: block;
-    cursor: pointer;
-}
-
-#header{
-    background: url(../img/img1.jpg);
-    width: 100%;
-}
-
-img{
-    background-image: url(img/img1.jpg);
-    width: 100vw;
-}
-/*Main*/
-div > a {
     color: black;
-    text-decoration: none;
-    margin: 1%;
-}
- /*a:hover{
-    transition: 0.3s;
     font-weight: bolder;
-    background-color: aqua;
-}*/
+}
 
-/*Conteudo Main*/
-
-
-button{
+/*Main*/
+.linkM{
+    background-color: darkgray;
+    color: black;
+    margin-top: 10px;
+    text-decoration: none;
     padding: 10px;
     border-radius: 10px;
     font-weight: bolder;
@@ -108,28 +95,21 @@ section > ul > a:hover{
 }
 
 footer{
-    margin-top: 100px;
+    width: 100%;
+    padding: 10px;
     background-color: darkgray;
-    width: 100vw;
     padding-left: 10px;
 }
 
 ul{
-    margin-top: 80px;
     line-height: 30px;
     columns: 2;
     list-style-type: none;
     display: block;
 }
 
-
 footer p {
     font-weight: bolder;
-
-}
-
-ul{
-    columns: 2;
 }
 
 footer a {
