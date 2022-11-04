@@ -2,6 +2,10 @@
 
 /*Sempre é bom lembarar de dar um display block*/
 /*Parar de usar a configuração de body de vh e vw */
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
 
 * {
     margin: 0px;
@@ -9,12 +13,12 @@
 }
 
 
-
 /* IMG */
 img{
     background-image: url(img/img1_400px.jpg);
     background-size: cover;
     margin: 0px;
+    height: 150px;
     padding: 0px;
     width: 100vw;
 }
@@ -95,7 +99,8 @@ section > ul > a:hover{
 }
 
 footer{
-    width: 100%;
+    padding: 50px;
+    width: 100vw;
     padding: 10px;
     background-color: darkgray;
     padding-left: 10px;
@@ -120,9 +125,8 @@ footer a {
 
 footer a:hover{
     background-color: rgb(131, 131, 131);
-    width: 100%;
-    padding: 7px;
     border-radius: 10px;
+    padding: 10px;
     transition: 1.3s;
     font-weight: bolder;
     font-size: 15px;
