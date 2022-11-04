@@ -16,7 +16,6 @@
 /* IMG */
 img{
     background-image: url(img/img1_400px.jpg);
-    background-size: cover;
     margin: 0px;
     height: 150px;
     padding: 0px;
@@ -54,6 +53,9 @@ menu a {
 }
 
 /*Main*/
+main{
+    width: 100vw;
+}
 .linkM{
     background-color: darkgray;
     color: black;
@@ -99,7 +101,6 @@ section > ul > a:hover{
 }
 
 footer{
-    padding: 50px;
     width: 100vw;
     padding: 10px;
     background-color: darkgray;
