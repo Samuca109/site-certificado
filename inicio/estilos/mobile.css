@@ -2,34 +2,41 @@
 
 /*Sempre é bom lembarar de dar um display block*/
 /*Parar de usar a configuração de body de vh e vw */
-/* ::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
-}*/
 
+/* Quando o footer nao cola em baixo é porque nao tem conteudo suficiente para isso*/
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body, html{
-    margin: 0px;
-    padding: 0px;
+   height: 100vh;
+   width: 100vw;
+   /*Tira a barra de rolagem*/
+   overflow-y:hidden;
+   overflow-y:auto;
+   overflow-x:hidden;
+    /* overflow-y:hidden;
+     */
 }
+
+
 /* IMG */
 img{
     background-image: url(img/img1_400px.jpg);
-    margin: 0px;
     height: 150px;
-    padding: 0px;
-    width: 100vw;
+    width: 100%;
 }
 
 /*Hamburguer*/
 #hamburguer{
+    background-color: rgb(85, 85, 85);
     text-align: center;
     display: block;
     cursor: pointer;
+    width: 100vw;
+
 }
 
 /*Menu*/
@@ -103,15 +110,18 @@ section > ul > a:hover{
     margin-bottom: 100px;
 }
 
-footer{
-    background-color: aqua;
+.video1{
+    max-width:450px;
     position: relative;
-    max-height: 70vh;
-    padding-bottom: 2.5rem; 
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;  
+    width: 100vw;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+footer{
+    background-color: darkgray;
+    display: flex;
+  
 }
 
 ul{
@@ -119,14 +129,17 @@ ul{
     columns: 2;
     list-style-type: none;
     display: block;
+    padding: 7px;
+    text-align: center;
+    width: 100vw;
 }
 
 #geral{
+    display: inline-table;
     line-height: 30px;
     columns: 2;
     list-style-type: none;
     display: block;
-    background-color: darkgray;
 }
 
 footer p {
@@ -148,3 +161,13 @@ footer a:hover{
     font-size: 15px;
     text-align: center;
 } 
+    /*      Gruda o footer quando nao tem conteudo 
+   position: relative;
+    max-height: 70vh;
+    padding-bottom: 2.5rem; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  */
+
+    /**/
